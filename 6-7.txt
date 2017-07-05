@@ -1,0 +1,1 @@
+{"studentName":"yk","professionalName":"软件工程","unitName":"单位123","studentCode":"20152110010010","professionalCode":"12121","outStudentNumTerritory":"19","inStudentNmuTerritory":"11"}

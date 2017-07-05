@@ -1,0 +1,25 @@
+from selenium import webdriver
+import time
+web=webdriver.Chrome()
+web.get('http://222.73.157.153:8080/a?login')
+name=web.find_element_by_id('username')
+name.send_keys('admin')
+pw=web.find_element_by_id('password')
+pw.send_keys('admin')
+btn=web.find_element_by_id('loginBtn')
+btn.click()
+time.sleep(3)
+#li1=web.find_element_by_xpath('//*[@id="menu"]/li[2]/a')
+#li1.click()
+#time.sleep(3)
+#l2=web.find_element_by_xpath('//*[@id="menu-700"]/li[2]')
+#l2.click()
+web.get('http://222.73.157.153:8080/a/bd/tJcgxx/form?taskId=5fee0de7ea924037a182711043aa3686&isGather=1&approveState=&isTotal=&isFixed=0&tableId=106&ids=&isView=&isApprove=')
+
+
+'''
+<a href="/a/bd/tGatherTask/form" class="a_btn"><i class="ico_ds"></i>新增采集任务</a>
+
+'/a/bd/tJcgxx/transit?isGather=1&isFixed=0&taskId=5fee0de7ea924037a182711043aa3686&tableId=106'
+
+'''
